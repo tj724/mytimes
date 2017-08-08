@@ -75,11 +75,12 @@ div{
     display: flex;
     flex-direction: column;
     margin-right: 32px;
-    justify-content: center; 
+     
 }
 
 .column.large {
-  width: 630px;    
+  width: 630px;
+display: inline-flex;
 }
 
 .column.medium {
@@ -89,28 +90,38 @@ div{
 .column.small {
     width: 240px;
 }
-
-.story{
+/*Each story is wrapped in this*/
+/*.story{
     display: flex;
     flex-direction: column;
     align-content: center;
            
-}
+}*/
 
+/*Each picture for a story is wrapped in this with a span for the caption*/
 .storyimage{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 630px;
+}
+
+.story1{
+    display: block;
+}
+
+.story2, .story3{
+    width: 50%;
+    
 }
 
 
+/*this is ued to individualize the background images*/
 #image1{
     background-image: url(images/img-story-main.png);
-    width: 630px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     display: flex;
-    
-    
+    width: 630px;
 }
 
 
@@ -134,6 +145,7 @@ div{
 
 
 .imagetext{
+    display: flex;
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
@@ -148,4 +160,10 @@ div{
     margin-left: 20px;
 }
 
+
+
+p{
+    margin-top: 16px;
+    display: block;
+}
 
