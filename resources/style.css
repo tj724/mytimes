@@ -62,7 +62,7 @@ div{
 /*Main Content Style*/
 #maincontent{
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-content: space-between;
     font-family: Georgia;
     font-size: 17px;
@@ -71,6 +71,9 @@ div{
     padding-bottom: 78px;
     /*position: relative;
     top: 130px;*/
+    width: 1232px;
+    margin: 0 auto 78px auto;
+    padding-top: 116px;
 }
 
 
@@ -137,7 +140,7 @@ h2{
 
 #story2-3{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 17px;
 }
 
@@ -216,6 +219,40 @@ p{
     display: block;
 }
 
+/*--------Footer*/
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 325px;
+    background-color: MediumAquamarine;
+    margin: auto;
+    font-family: Verdana;
+    font-size: 12px;
+}
 
+#footer .title{
+    display: inline-block;
+    padding-right: 25px;
+    border-right: 2px solid white;
+    font-family: Georgia;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
 
+#footer #nav {
+    display: inline-block;
+    padding-left: 25px;
+}
 
+#footer #nav span {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+#copyright{
+    display: block;
+}
